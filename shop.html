@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин — Космонавт</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+</head>
+<body class="page-shop">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🚀</span>
+                <span class="logo-text">Космонавт</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="game.html" class="nav-link">Играть</a>
+                <a href="shop.html" class="nav-link active">Магазин</a>
+                <a href="how-to-play.html" class="nav-link">Как играть</a>
+                <div class="user-balance">
+                    💰 <span id="navBalance">1000</span> ₵
+                </div>
+            </div>
+            <button class="burger" id="burger">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="shop-page">
+        <div class="container">
+            <div class="shop-hero">
+                <h1>💎 Пополнение баланса</h1>
+                <p>Купи игровую валюту за TON и играй без ограничений</p>
+            </div>
+
+            <div class="wallet-status">
+                <div class="wallet-info">
+                    <span class="status-text" id="walletStatusText">Кошелёк не подключён</span>
+                    <span class="address" id="walletAddress" style="display:none;"></span>
+                </div>
+                <button class="btn-connect" id="connectWalletBtn">🔗 Подключить кошелёк</button>
+            </div>
+
+            <div class="shop-grid" id="shopGrid"></div>
+
+            <div class="shop-note" id="shopNote">
+                💡 <strong>Демо-режим:</strong> Если кошелёк TON не подключён, покупка будет имитирована и валюта зачислится на игровой баланс. Для реальной оплаты подключите TON кошелёк (Tonkeeper, MyTonWallet и др.).
+            </div>
+        </div>
+    </main>
+
+    <!-- Модальное окно -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <h3>Подтверждение покупки</h3>
+            <div class="modal-amount" id="modalAmount">1000 ₵</div>
+            <div class="modal-price" id="modalPrice">0.2 TON</div>
+            <div class="address-info">
+                Получатель: UQC1DG4cfYQbisJHj0w9_BM5tRl9naOETkLgcZpMOw0dEMTc
+            </div>
+            <div id="modalStatus"></div>
+            <div class="modal-buttons">
+                <button class="btn-cancel" id="modalCancel">Отмена</button>
+                <button class="btn-confirm" id="modalConfirm">Оплатить</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
+    <script src="scripts/shop.js"></script>
+</body>
+</html>
