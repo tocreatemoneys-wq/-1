@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Играть — Космонавт</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+</head>
+<body class="page-game">
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🚀</span>
+                <span class="logo-text">Космонавт</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="game.html" class="nav-link active">Играть</a>
+                <a href="shop.html" class="nav-link">Магазин</a>
+                <a href="how-to-play.html" class="nav-link">Как играть</a>
+                <div class="user-balance">
+                    💰 <span id="navBalance">1000</span> ₵
+                </div>
+            </div>
+            <button class="burger" id="burger">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Игра -->
+    <main class="game-page">
+        <div class="game-wrapper">
+            <div class="game-header">
+                <div class="game-stats">
+                    <div class="game-stat">
+                        <span class="game-stat-label">Баланс</span>
+                        <span class="game-stat-value" id="balanceDisplay">1000 ₵</span>
+                    </div>
+                    <div class="game-stat">
+                        <span class="game-stat-label">Ставка</span>
+                        <span class="game-stat-value" id="currentBet">10 ₵</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="canvas-container">
+                <canvas id="gameCanvas" width="1200" height="500"></canvas>
+                <div class="multiplier-display" id="multiplierDisplay">1.00x</div>
+            </div>
+
+            <div class="game-controls">
+                <div class="bet-controls">
+                    <label>Ставка:</label>
+                    <div class="bet-buttons">
+                        <button class="bet-btn" data-bet="10">10</button>
+                        <button class="bet-btn" data-bet="50">50</button>
+                        <button class="bet-btn" data-bet="100">100</button>
+                        <button class="bet-btn" data-bet="500">500</button>
+                    </div>
+                    <input type="number" id="betAmount" value="10" min="1" max="10000">
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn btn-start" id="startBtn">🚀 СТАРТ</button>
+                    <button class="btn btn-cashout" id="cashoutBtn" disabled>💰 ЗАБРАТЬ</button>
+                </div>
+
+                <a href="shop.html" class="btn btn-shop">💎 Пополнить</a>
+            </div>
+
+            <div class="history" id="history"></div>
+        </div>
+
+        <!-- Боковая панель с топом -->
+        <aside class="game-sidebar">
+            <div class="sidebar-section">
+                <h3>🏆 Последние выигрыши</h3>
+                <div class="top-wins" id="topWins"></div>
+            </div>
+            <div class="sidebar-section">
+                <h3>📊 Статистика</h3>
+                <div class="stats-list">
+                    <div class="stat-row">
+                        <span>Сыграно раундов</span>
+                        <strong id="totalRounds">0</strong>
+                    </div>
+                    <div class="stat-row">
+                        <span>Побед</span>
+                        <strong id="totalWins">0</strong>
+                    </div>
+                    <div class="stat-row">
+                        <span>Лучший множитель</span>
+                        <strong id="bestMultiplier">—</strong>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
+    <script src="scripts/game.js"></script>
+</body>
+</html>
