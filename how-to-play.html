@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Как играть — Космонавт</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+</head>
+<body class="page-info">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🚀</span>
+                <span class="logo-text">Космонавт</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="game.html" class="nav-link">Играть</a>
+                <a href="shop.html" class="nav-link">Магазин</a>
+                <a href="how-to-play.html" class="nav-link active">Как играть</a>
+            </div>
+            <button class="burger" id="burger">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="info-page">
+        <div class="container">
+            <h1 class="page-title">📖 Как играть в <span class="gradient-text">Космонавт</span></h1>
+
+            <section class="info-section">
+                <h2>🎯 Основная цель</h2>
+                <p>Забрать выигрыш до того, как ракета взорвётся. Чем дольше летит космонавт — тем выше множитель, но и больше риск краха.</p>
+            </section>
+
+            <section class="info-section">
+                <h2>🎮 Пошаговая инструкция</h2>
+                <div class="steps-list">
+                    <div class="step-item">
+                        <div class="step-num">1</div>
+                        <div class="step-content">
+                            <h3>Выберите ставку</h3>
+                            <p>Установите сумму ставки. Минимум — 1 ₵, максимум ограничен вашим балансом.</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-num">2</div>
+                        <div class="step-content">
+                            <h3>Нажмите «СТАРТ»</h3>
+                            <p>Ракета взлетает, множитель начинает расти: 1.2x, 1.5x, 2x, 5x и так далее.</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-num">3</div>
+                        <div class="step-content">
+                            <h3>Следите за множителем</h3>
+                            <p>Чем дольше летит ракета — тем больше множитель. Но в случайный момент произойдёт краш!</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-num">4</div>
+                        <div class="step-content">
+                            <h3>Нажмите «ЗАБРАТЬ»</h3>
+                            <p>Успейте нажать до краха. Выигрыш = ставка × множитель в момент нажатия.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="info-section">
+                <h2>💰 Формула выигрыша</h2>
+                <div class="formula-box">
+                    Выигрыш = <strong>Ставка</strong> × <strong>Множитель</strong>
+                </div>
+                <p>Пример: ставка 100 ₵, вы забрали на 3.5x → выигрыш 350 ₵, чистая прибыль 250 ₵.</p>
+            </section>
+
+            <section class="info-section">
+                <h2>⚡ Горячие клавиши</h2>
+                <div class="hotkeys">
+                    <div class="hotkey">
+                        <kbd>ПРОБЕЛ</kbd>
+                        <span>Старт раунда / Забрать выигрыш</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="info-section">
+                <h2>💎 Пополнение баланса</h2>
+                <p>Пополнить баланс можно за TON криптовалюту. Перейдите в <a href="shop.html">Магазин</a> и выберите подходящий пакет.</p>
+                <ul>
+                    <li>1 000 ₵ — 0.2 TON</li>
+                    <li>3 000 ₵ — 0.5 TON</li>
+                    <li>5 000 ₵ — 0.8 TON</li>
+                    <li>10 000 ₵ — 1.0 TON</li>
+                </ul>
+            </section>
+
+            <section class="info-section">
+                <h2>🧠 Стратегии</h2>
+                <div class="strategies">
+                    <div class="strategy-card">
+                        <h3>🐢 Осторожная</h3>
+                        <p>Забирайте на 1.2x–1.5x. Высокий процент побед, но маленькая прибыль.</p>
+                    </div>
+                    <div class="strategy-card">
+                        <h3>⚖️ Сбалансированная</h3>
+                        <p>Забирайте на 1.8x–2.5x. Оптимальное соотношение риска и награды.</p>
+                    </div>
+                    <div class="strategy-card">
+                        <h3>🔥 Агрессивная</h3>
+                        <p>Ждите 5x+. Большой выигрыш, но высокий риск краха.</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="cta-inline">
+                <a href="game.html" class="btn-primary">🚀 Попробовать сейчас</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
