@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Космонавт — захватывающая crash-игра. Успей забрать выигрыш до краша ракеты!">
+    <title>Космонавт — Crash Game | Играй и выигрывай</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🚀</span>
+                <span class="logo-text">Космонавт</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active">Главная</a>
+                <a href="game.html" class="nav-link">Играть</a>
+                <a href="shop.html" class="nav-link">Магазин</a>
+                <a href="how-to-play.html" class="nav-link">Как играть</a>
+                <a href="game.html" class="btn-play">🚀 Играть сейчас</a>
+            </div>
+            <button class="burger" id="burger">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero секция -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-badge">🔥 Самая популярная crash-игра</div>
+            <h1 class="hero-title">
+                Успей забрать <span class="gradient-text">выигрыш</span><br>
+                до краха ракеты!
+            </h1>
+            <p class="hero-subtitle">
+                Множитель растёт с каждой секундой. Чем дольше летит космонавт — тем больше выигрыш.
+                Но в любой момент ракета может взорваться. Успей нажать «Забрать»!
+            </p>
+            <div class="hero-buttons">
+                <a href="game.html" class="btn-primary">🚀 Играть бесплатно</a>
+                <a href="how-to-play.html" class="btn-secondary">📖 Как играть</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-value">1 000 ₵</div>
+                    <div class="stat-label">Стартовый бонус</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">до 30x</div>
+                    <div class="stat-label">Максимальный множитель</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">TON</div>
+                    <div class="stat-label">Пополнение баланса</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="rocket-animation">🚀</div>
+            <div class="stars-trail"></div>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Почему <span class="gradient-text">Космонавт</span>?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Быстрые раунды</h3>
+                    <p>Каждый раунд занимает от 5 секунд до 2 минут. Играй сколько хочешь.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Полный контроль</h3>
+                    <p>Ты сам решаешь, когда забрать выигрыш. Никаких автоматических решений.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💎</div>
+                    <h3>Честная игра</h3>
+                    <p>Прозрачный алгоритм генерации краша. Каждый раунд проверяем.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔗</div>
+                    <h3>Пополнение за TON</h3>
+                    <p>Быстрое и безопасное пополнение через TON кошелёк.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Как это работает -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">Как это <span class="gradient-text">работает</span></h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Сделай ставку</h3>
+                    <p>Выбери сумму ставки из своего баланса и нажми «Старт»</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Следи за множителем</h3>
+                    <p>Множитель растёт: 1.5x, 2x, 5x... Чем дольше — тем больше выигрыш</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Забери вовремя</h3>
+                    <p>Нажми «Забрать» до краха. Выигрыш = ставка × множитель</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Готов к полёту? 🚀</h2>
+                <p>Получи 1000 ₵ стартового бонуса и начни выигрывать прямо сейчас</p>
+                <a href="game.html" class="btn-primary btn-large">🚀 Начать игру</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">🚀</span>
+                    <span class="logo-text">Космонавт</span>
+                    <p>Crash-игра нового поколения</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Игра</h4>
+                    <a href="game.html">Играть</a>
+                    <a href="shop.html">Магазин</a>
+                    <a href="how-to-play.html">Как играть</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Помощь</h4>
+                    <a href="#">FAQ</a>
+                    <a href="#">Поддержка</a>
+                    <a href="#">Правила</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Космонавт. Все права защищены.</p>
+                <p class="disclaimer">⚠️ Игра предназначена для развлечения. Играйте ответственно.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
